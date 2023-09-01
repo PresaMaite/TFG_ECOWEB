@@ -1,0 +1,36 @@
+@use "./../../styles/variables" as color;
+@use "./../../styles/margins" as padding;
+
+.footerContainer {
+    background-color: color.$colorWhite;
+    border-top: 1px solid color.$colorGray;
+
+    width: 100%;
+
+    padding: 64px padding.$padding;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    text-align: center;
+
+    img {
+        width: 100%;
+        height: auto;
+
+        max-width: 303px;
+    }
+
+    .footerInfo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+
+        flex-wrap: wrap;
+    }
+}
