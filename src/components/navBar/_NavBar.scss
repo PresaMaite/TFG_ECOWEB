@@ -1,0 +1,69 @@
+@use "./../../styles/margins" as padding;
+@use "./../../styles/variables" as colors;
+
+.layoutNavBar {
+    height: 64px;
+    width: 100%;
+
+    padding: 0 padding.$padding;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: colors.$colorWhite;
+    border-bottom: 1px solid colors.$colorGray;
+
+    > img {
+        height: 48px;
+        width: auto;
+
+        padding: 8px 0;
+    }
+
+    button {
+        height: 48px;
+        width: 48px;
+
+        border: 0;
+        background-color: inherit;
+    }
+}
+
+
+.layoutMenu {
+    height: 100vh;
+    width: 75vw;
+
+    padding: 0 padding.$padding;
+
+    background-color: white;
+    border-left: 1px solid colors.$colorGray;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    p {
+        height: 48px;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+    }
+
+    :first-child {
+        align-self: flex-end;
+        justify-items: center;
+        justify-content: center;
+
+        height: 48px;
+        width: 48px;
+
+        font-weight: bolder;
+    }
+}
