@@ -1,0 +1,41 @@
+@use "./../styles/variables"as color;
+@use "./../styles/margins" as padding;
+
+.svgCardContainer {
+    max-width: 1200px;
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+
+    margin-bottom: 124px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.whiteSection {
+    background-color: color.$backgroundWhite;
+    color: black;
+    padding: 64px padding.$padding;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.blueSection {
+    background-color: color.$colorPaleBlue;
+    color: white;
+    padding: 64px padding.$padding;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
