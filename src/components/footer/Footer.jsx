@@ -2,7 +2,7 @@ import "./_Footer.scss";
 
 export const Footer = ({logo}) => (
     <footer className="footerContainer">
-        <img src={logo} alt="" />
+        <img src={logo} alt="ecoweb logo" />
         <div className="footerInfo">
             <p>Contactar</p>
             <p>FAQs</p>

@@ -2,24 +2,34 @@
 
 .svgCard {
     width: 100%;
-    height: 100%;
+    height: auto;
+    max-width: 340px;
 
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: space-between;
 
     position: relative;
 
     img {
-        max-width: 340px;
-        max-height: 340px;
-
         width: 100%;
         height: auto;
+
+        z-index: 1;
+    }
+
+    > h3 {
+        padding: 0 32px 32px 32px;
+        margin-top: -32px;
+        text-align: center;
     }
 
     h3 {
         font-size: 24px;
+        color: black;
+
+        z-index: 1;
     }
 
     .svgCardBg {
@@ -29,13 +39,46 @@
         max-height: 340px;
 
         width: 100%;
-        height: 100%;
+        height: auto;
 
         position: absolute;
-        top: 28%;
-        z-index: -1;
+        top: 124px;
+        bottom: 0;
 
         border-radius: 8px;
     }
 
+    .cardDescription {
+        padding: 16px;
+
+        margin-top: -32px;
+        width: 100%;
+        min-height: 138px;
+        height: 100%;
+
+        background-color: color.$cardBlue;
+        color: black;
+
+        z-index: 1;
+
+        align-self: flex-end;
+        justify-self: end;
+
+        border-radius: 0 0 8px 8px;
+    }
+
+}
+
+.isCardStyle {
+    max-width: 340px;
+    max-height: 340px;
+
+    padding: 75px;
+
+    width: 100%;
+    height: auto;
+}
+
+.isImage {
+    top:0 !important;
 }

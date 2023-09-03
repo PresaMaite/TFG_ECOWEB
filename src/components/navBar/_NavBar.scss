@@ -40,13 +40,15 @@
     background-color: white;
     border-left: 1px solid colors.$colorGray;
 
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
 
     display: flex;
     flex-direction: column;
     gap: 24px;
+
+    z-index: 2;
 
     p {
         height: 48px;

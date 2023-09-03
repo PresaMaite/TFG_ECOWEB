@@ -17,7 +17,6 @@ export const Linechart = () => {
             ],
           }}
           options={{
-            maintainAspectRatio: false,
             scales:{
                 y:{
                     title: {

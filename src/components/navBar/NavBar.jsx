@@ -1,10 +1,10 @@
 import "./_NavBar.scss";
 
-import logo from "./../../assets/logo/ecoweb.svg";
 import menu from "./../../assets/img/menu.svg";
+
 import { useState } from "react";
 
-export const NavBar = () => {
+export const NavBar = ({logo}) => {
     const [showMenu, setshowMenu] = useState(false);
 
     return(
