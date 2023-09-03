@@ -1,0 +1,27 @@
+@use "./../../styles/variables" as color;
+@use "./../../styles/margins" as padding;
+
+.accordionBtn {
+    height: 64px;
+    width: 100%;
+    max-width: 800px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 padding.$padding;
+
+    background-color: color.$colorWhite;
+    border: 1px solid color.$colorGray;
+
+    cursor: pointer;
+}
+
+.accordionText {
+    height: 100%;
+    width: 100%;
+    max-width: 800px;
+
+    padding: padding.$padding;
+    background-color: color.$backgroundWhite;
+}
