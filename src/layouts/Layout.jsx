@@ -4,7 +4,7 @@ import logo from "./../assets/logo/ecoweb.svg";
 
 import { Footer } from "../components/footer/Footer";
 import { NavBar } from "../components/navBar/NavBar";
-import { Faq } from "../pages/faq/Faq";
+import { Carbon } from "../pages/carbon/carbon";
  
 
 
@@ -12,7 +12,7 @@ export const Layout = () => {
     return(
         <>
             <NavBar logo={logo} />
-            <Faq />
+            <Carbon />
             <Footer logo={logo} />
         </>
     )
