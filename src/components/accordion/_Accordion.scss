@@ -13,15 +13,19 @@
 
     background-color: color.$colorWhite;
     border: 1px solid color.$colorGray;
+    color: black;
 
     cursor: pointer;
 }
 
 .accordionText {
     height: 100%;
-    width: 100%;
+    width: calc(100% - 2px);
     max-width: 800px;
+
+    margin: auto;
 
     padding: padding.$padding;
     background-color: color.$backgroundWhite;
+    color: black;
 }
