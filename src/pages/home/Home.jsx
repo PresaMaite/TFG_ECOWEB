@@ -1,5 +1,7 @@
 import "./_Home.scss";
 
+import { Link } from "react-router-dom";
+
 import { Button } from "../../components/button/Button";
 import { SvgImages } from "../../components/svgImages/SvgImages";
 import { Linechart } from "../../components/linechart/Linechart";
@@ -51,7 +53,7 @@ export const Home = () => {
                     estilo de diseño reduciremos el peso de los elementos multimedia, 
                     reduciendo el espacio necesario en servidores, así como su transferencia de datos.
                 </p>
-                <Button btnColor="btnBlue" text="Saber más" />
+                <Link to="/ecodesign"><Button btnColor="btnBlue" text="Saber más" /></Link>
             </section>
 
             <section className="whiteSection" >

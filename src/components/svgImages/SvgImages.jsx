@@ -1,6 +1,6 @@
 import "./_SvgImages.scss";
 
-export const SvgImages = ({svg, alt, text, title, description, isCard, link, isImage=true}) => (
+export const SvgImages = ({svg, alt, text, title, description, isCard, link, isImage=false}) => (
 
     <div className="svgCard">
         {!isCard &&

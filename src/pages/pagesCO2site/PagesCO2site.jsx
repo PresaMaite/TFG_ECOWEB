@@ -10,24 +10,30 @@ import { CarbonAPI } from "../../services/CarbonAPI";
 export const PagesCO2site = () => {
 
     const page = useParams().page;
+
     const [search, setsearch] = useState("");
 
-    switch (page) {
-        case "Google":
-            setsearch("https://www.google.es/");
-            break;
 
-        case "Facebook":
-            setsearch("https://es-es.facebook.com/");
-            break;
+    useEffect(() => {
 
-        case "YouTube":
-            setsearch("https://www.youtube.com/");
-            break;
+        switch (page) {
+            case "Google":
+                setsearch("https://www.google.es/?gws_rd=ssl");
+                break;
     
-        default:
-            break;
-    }
+            case "Facebook":
+                setsearch("https://es-es.facebook.com/");
+                break;
+    
+            case "YouTube":
+                setsearch("https://www.youtube.com/");
+                break;
+        
+            default:
+                break;
+        }
+
+    }, [page])
 
 
     const [carbon, setcarbon] = useState();
@@ -36,6 +42,7 @@ export const PagesCO2site = () => {
         CarbonAPI(search)
             .then((data) => setcarbon(data) )
     }, [search])
+
 
     return(
         <>

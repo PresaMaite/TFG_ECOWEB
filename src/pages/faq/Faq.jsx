@@ -30,7 +30,7 @@ import { Accordion } from "../../components/accordion/Accordion";
 
 export const Faq = () => (
     <>
-        <main className="whiteSection mainStyle">
+        <main className="whiteSection mainFaq">
             <h1>Preguntas frecuentes</h1>
 
         </main>
