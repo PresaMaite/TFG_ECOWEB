@@ -18,6 +18,8 @@ export const Carbon = () => {
     }, [search])
     
     
+    let inputData = "";
+    
     return(
         <>
             <main className="whiteSection mainStyle">
@@ -26,8 +28,9 @@ export const Carbon = () => {
                     type="text" 
                     placeholder="https://www.ejemplo.com/" 
                     onKeyUp={(e) => (e.key==="Enter") && setsearch(e.target.value)} 
+                    onChange={(e) => inputData = e.target.value}
                 />
-                <Button btnColor="btnPurple" text="Medir CO2" />
+                <Button btnColor="btnPurple" text="Medir CO2" onClick={() => setsearch(inputData)} />
             </main>
 
             {carbon &&
@@ -66,7 +69,7 @@ export const Carbon = () => {
             }
 
 
-            {!carbon?.green &&
+            {(carbon && !carbon?.green) &&
             <section>
                 <Ecodesign showTitle={false} />
             </section>

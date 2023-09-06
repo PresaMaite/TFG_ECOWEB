@@ -2,7 +2,7 @@
 const BASE_URL = "https://api.websitecarbon.com/site?url=";
 
 export const CarbonAPI = (url) => {
-    
+
     console.log(encodeURIComponent(url))
     return(
 

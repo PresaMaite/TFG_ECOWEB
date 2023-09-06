@@ -14,7 +14,7 @@
     background-color: colors.$colorWhite;
     border-bottom: 1px solid colors.$colorGray;
 
-    > img {
+    img {
         height: 48px;
         width: auto;
 
@@ -27,6 +27,8 @@
 
         border: 0;
         background-color: inherit;
+
+        cursor: pointer;
     }
 }
 
@@ -49,6 +51,10 @@
     gap: 24px;
 
     z-index: 2;
+
+    a,p:hover {
+        cursor: pointer;
+    }
 
     p {
         height: 48px;
