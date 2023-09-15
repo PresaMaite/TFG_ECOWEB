@@ -5,6 +5,11 @@
   box-sizing: border-box;
 
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  p {
+    line-height: 150%;
+    max-width: 50ch;
+  }
 }
 
 a {

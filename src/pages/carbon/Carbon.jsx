@@ -36,16 +36,16 @@ export const Carbon = () => {
             {carbon &&
             <section className="blueSection">
                 {carbon?.green && 
-                <>
+                <div className="titleContainer">
                     <h2>¡Felicidades!</h2>
                     <p>Tu web es ECO y un 83% más limpia que otras webs.</p>
-                </>
+                </div>
                 }
                 {!carbon?.green && 
-                <>
+                <div className="titleContainer">
                     <h2>Ups, ¡parece que podría ser más ECO!</h2>
                     <p>Tu web solo un 8% más limpia que otras webs.</p>
-                </>
+                </div>
                 }
 
                 <div className="svgCardContainer">

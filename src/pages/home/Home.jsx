@@ -25,8 +25,11 @@ export const Home = () => {
             </main>
 
             <section className="blueSection">
-                <h2>¿Cómo afecta a la contaminación?</h2>
-                <p>Hay diferentes factores que afectan a la contaminación web:</p>
+                <div className="titleContainer">
+                    <h2>¿Cómo afecta a la contaminación?</h2>
+                    <p>Hay diferentes factores que afectan a la contaminación web:</p>
+                </div>
+
                 <div className="svgCardContainer">
                     <SvgImages svg={bbdd} text="Bases de datos" alt="imagen de bases de datos" />
                     <SvgImages svg={dataTransfer} text="Transferencia de datos" alt="imagen de la transferencia de datos" />
@@ -35,25 +38,33 @@ export const Home = () => {
             </section>
 
             <section className="whiteSection">
-                <div className="chartContainer">
-                    <Linechart />
+                <div className="chartTitleContainer">
+                    <div className="chartContainer">
+                        <Linechart />
+                    </div>
+
+                    <div className="titleContainer">
+                        <h2>Gráfica del consumo de Internet</h2>
+                        <p>
+                            Según estudios realizados, cada año se extiende más 
+                            el uso de internet, por lo que la huella de carbono 
+                            con el uso de las webs, es cada vez mayor.
+                        </p>
+                    </div>
                 </div>
-                <h2>Gráfica del consumo de Internet</h2>
-                <p>
-                    Según estudios realizados, cada año se extiende más 
-                    el uso de internet, por lo que la huella de carbono 
-                    con el uso de las webs, es cada vez mayor.
-                </p>
+
             </section>
 
             <section className="blueSection">
-                <h2>Diseño ecológico, ¿qué es?</h2>
-                <p>
-                    Es una forma de reducir la huella de carbono, mediante este 
-                    estilo de diseño reduciremos el peso de los elementos multimedia, 
-                    reduciendo el espacio necesario en servidores, así como su transferencia de datos.
-                </p>
-                <Link to="/ecodesign"><Button btnColor="btnBlue" text="Saber más" /></Link>
+                <div className="titleContainer center">
+                    <h2>Diseño ecológico, ¿qué es?</h2>
+                    <p>
+                        Es una forma de reducir la huella de carbono, mediante este 
+                        estilo de diseño reduciremos el peso de los elementos multimedia, 
+                        reduciendo el espacio necesario en servidores, así como su transferencia de datos.
+                    </p>
+                    <Link to="/ecodesign"><Button btnColor="btnBlue" text="Saber más" /></Link>
+                </div>
             </section>
 
             <section className="whiteSection" >
