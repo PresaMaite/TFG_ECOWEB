@@ -37,7 +37,9 @@
 <!-- ABOUT THE PROJECT -->
 ## Sobre el proyecto
 
-
+  <a href="">
+    <img src="src/assets/readme/ecoweb-readme.png" alt="web screenshot" width="100%">
+  </a>
 
 Es el proyecto de fin de carrera, en el que se explica el método del diseño ecológico y como puede marcar la diferencia en el impacto ambiental, son unos métodos no muy divulgados y de escasa información, siendo mayoritariamente todo en inglés. Con este proyecto me propuse comprobar su eficacia y su divulgación para un público objetivo Español.
 
