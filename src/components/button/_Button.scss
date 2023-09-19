@@ -1,0 +1,28 @@
+@use "./../../styles/variables" as color;
+
+.btnStyle {
+    height: 64px;
+    width: 100%;
+
+    max-width: 335px;
+
+    border-radius: 8px;
+    border: 0;
+
+    font-size: 20;
+    font-weight: bold;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+.btnPurple {
+    background-color: color.$colorPurple;
+    
+}
+
+
+.btnBlue {
+    background-color: color.$colorBlue;
+}

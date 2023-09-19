@@ -1,0 +1,60 @@
+@use "./../../styles/variables" as color;
+@use "./../../styles/margins" as padding;
+
+
+.mainStyle {
+    min-height: 65vh;
+}
+
+.svgCardContainer {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 64px;
+
+    margin-bottom: 124px;
+}
+
+.chartTitleContainer {
+    max-width: 1200px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .chartContainer {
+        width: 100%;
+        max-width: 624px;
+        height: auto;
+    }
+}
+
+
+
+@media screen and (min-width: 576px) {
+    .center {
+        align-items: center;
+        text-align: center;
+
+        .btnStyle {
+            min-width: 335px;
+        }
+    }
+  }
+
+
+  @media screen and (min-width: 1235px) {
+    .chartTitleContainer {
+        flex-direction: row;
+
+        max-width: 1200;
+        width: 100%;
+
+        .titleContainer {
+            text-align: start;
+        }
+    }
+  }
+  
