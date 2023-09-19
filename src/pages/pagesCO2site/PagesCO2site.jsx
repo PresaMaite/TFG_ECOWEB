@@ -52,15 +52,17 @@ export const PagesCO2site = () => {
 
             {carbon &&
             <section className="blueSection">
-                <h2>{page}</h2>
+                <div className="titleContainer">
+                    <h2>{page}</h2>
 
-                {carbon?.green && 
-                    <p>Tu web es ECO y un 83% más limpia que otras webs.</p>
-                }
+                    {carbon?.green && 
+                        <p>Tu web es ECO y un 83% más limpia que otras webs.</p>
+                    }
 
-                {!carbon?.green && 
-                    <p>Tu web solo un 8% más limpia que otras webs.</p>
-                }
+                    {!carbon?.green && 
+                        <p>Tu web solo un 8% más limpia que otras webs.</p>
+                    }
+                </div>
 
                 <div className="svgCardContainer">
                     <CarbonCard title="Bytes" value={carbon?.bytes} />

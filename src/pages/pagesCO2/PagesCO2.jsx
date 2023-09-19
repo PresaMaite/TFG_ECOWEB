@@ -15,10 +15,13 @@ export const PagesCO2 = () => (
         </main>
 
         <section className="blueSection">
-            <h2>¿Usas alguna de estas webs?</h2>
-            <p>
-                Estas son algunas de las páginas más usadas en Internet:
-            </p>
+            <div className="titleContainer">
+                <h2>¿Usas alguna de estas webs?</h2>
+                <p>
+                    Estas son algunas de las páginas más usadas en Internet:
+                </p>
+            </div>
+
 
             <div className="svgCardContainer">
                 <Link to="/pagesco2site/Google">

@@ -22,11 +22,13 @@ export const Ecodesign = ({showTitle=true, }) => (
         }
 
         <section className="blueSection">
-            <h2>¡Recuerda!</h2>
-            <p>
-                Un ECO Diseño no implica no poner imágenes o vídeos, 
-                ¡simplemente es hacer el uso más optimizado posible!
-            </p>
+            <div className="titleContainer">
+                <h2>¡Recuerda!</h2>
+                <p>
+                    Un ECO Diseño no implica no poner imágenes o vídeos, 
+                    ¡simplemente es hacer el uso más optimizado posible!
+                </p>
+            </div>
 
             <div className="svgCardContainer">
                 <SvgImages
