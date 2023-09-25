@@ -17,6 +17,10 @@
     cursor: pointer;
 }
 
+.btnStyle:hover {
+    opacity: 0.75;
+}
+
 .btnPurple {
     background-color: color.$colorPurple;
     
